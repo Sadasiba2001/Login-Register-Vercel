@@ -26,6 +26,7 @@ const Login = () => {
             if (!storedDataString) {
                 alert('Email does not exist.');
                 navigate('/register');
+                return;
             }
             else {
                 console.log('Stored data is:', storedDataString);
